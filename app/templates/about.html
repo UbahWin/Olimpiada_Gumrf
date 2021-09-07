@@ -1,45 +1,87 @@
 {% extends 'base.html'%}
 
 {% block content %}
-    <img src="/static/images/Banner_003_large+morrechflot.png" class="img-fluid"  style = "width: 100; margin: 0;" alt="...">
+    <img src="/static/images/Banner_003_large+morrechflot.png" class="img-fluid"  style = "margin: 0; width:auto; margin-block-start: 0;" alt="...">
     
     <div class="container" style="text-align: justify;">
-        <h1>Hello!</h1>
-        it's really nice to see you :)
 
-        <br/>
-        <h1><span class="badge bg-danger" style="font-family: 'Press Start 2P', cursive;">Об олимпиаде</span> </h1>
-        <br/>
+        <h1><span class="badge bg-danger" >Об олимпиаде</span> </h1>
 
-        orem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo bibendum felis id lobortis. Mauris eget pretium ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sit amet justo nec purus pharetra tempor dictum non mi. Vestibulum eget nunc sit amet enim bibendum tristique in et velit. Duis accumsan odio et urna sagittis, eget tincidunt dui tempus. Nam pretium, neque nec molestie lacinia, justo enim condimentum nibh, ut dapibus eros dolor ac lorem. Aenean pellentesque tristique enim at lacinia. Donec a elit lacus. Duis maximus bibendum tincidunt. Duis nec neque non nisl sodales iaculis non at elit. Fusce faucibus dolor vel sapien tincidunt, nec egestas libero tempor. Duis ullamcorper, ligula ut egestas cursus, est elit congue quam, in facilisis urna ex vitae augue. Quisque placerat id nisi eget tempor. Integer vulputate consequat tortor at sollicitudin.
+        <p >К участию в Морской олимпиаде приглашаются учащиеся 7-8 и 9-11 классов общеобразовательных учреждений и студенты 1-2 курсов профессиональных образовательных организаций РФ, а также ближнего и дальнего зарубежья.</p>
+        <p >Олимпиада состоит из двух туров – отборочный (заочный) и заключительный.</p>
+        <p >Отборочный (заочный) тур проводится с использованием дистанционных технологий с ограниченным по времени доступом к заданиям (60 минут) в форме ответов на вопросы викторины по морской тематике.</p>
+        <p s>Заключительный тур олимпиады проводится на площадках образовательных организаций, являющихся организаторами олимпиады, в очной формате или с применением дистанционных технологий в режиме реального времени в форме выполнения олимпиадных заданий по предметам. Продолжительность: 240 минут.</p>
 
-        Fusce molestie, nisi id varius dapibus, neque ante imperdiet sem, non hendrerit ante elit et magna. Nulla cursus tincidunt ante. Aliquam sit amet nisi lorem. In hac habitasse platea dictumst. Aliquam viverra elit accumsan, laoreet risus varius, semper risus. Quisque fermentum vulputate odio sed laoreet. Fusce aliquet tincidunt mauris, pellentesque aliquam sem efficitur ac. Praesent sed tincidunt tortor, in scelerisque nunc. Nunc convallis ex non turpis tincidunt feugiat. Nullam luctus blandit dui vitae convallis. Phasellus a purus ex. Quisque fringilla erat eleifend libero placerat, in porttitor eros ullamcorper.
-        
-        <br/>
-        <span class="badge bg-danger">Новости</span>
-        <br/>
+        <!-- <div class="container">
+            <div class="row g-2">
+              <div class="col-6">
+                <div class="p-0"> <img src ="/static/images/MO_courses_ArticSec.png"> </div>
+              </div>
+              <div class="col-6">
+                <div class="p-2 border bg-light"> <img src ="/static/images/MO_courses_ArticSec.png"> </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 border bg-light"> <img src ="/static/images/MO_courses_ArticSec.png"> </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 border bg-light"> <img src ="/static/images/MO_courses_ArticSec.png"> </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 border bg-light"> <img src ="/static/images/MO_courses_ArticSec.png"> </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 border bg-light"> <img src ="/static/images/MO_courses_ArticSec.png"> </div>
+              </div>
+            </div>
+          </div>
+         -->
+        <h1><span class="badge bg-danger">Даты проведения</span> </h1>
+ 
 
 
-        <div class="position-relative m-4" style="width: 75%; margin: auto;">
+        <div class="position-relative m-4" style="width: 100; margin: auto;">
             <div class="progress" style="height: 2px;">
               <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
             <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
             <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+        </div>
+
+            <p style = "text-indent: 0%;"> 28.10.2021 – 28.01.2022 — Регистрация на отборочный тур олимпиады <br/>
+            01.11.2021 – 31.01.2022 — Проведение отборочного (заочного) тура олимпиады <br/>
+            Март 2022 (по отдельному графику) — Проведение заключительного тура олимпиады </p>
+
+
+        <h1><span class="badge bg-danger">Новости</span> 
+            <br/><br/>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 50%; margin: auto;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/images/News_ex_001.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <a href = "{{ url_for('path.news') }}" ><img src="/static/images/News_ex_002.png" class="d-block w-100" alt="..."> </a>   
+                        <!-- #Если нажать на картинку -- перейдет по линке на страницу новости  -->
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
           </div>
 
-        Etiam quis egestas arcu. Nulla facilisi. Nunc accumsan felis ut lobortis porta. Integer congue pharetra scelerisque. Nunc convallis scelerisque nibh quis consectetur. Duis ullamcorper ut quam in euismod. Duis vitae ligula quis tortor rutrum pulvinar. Maecenas commodo lorem ac nulla aliquet, vel condimentum libero malesuada. Nullam orci velit, imperdiet sit amet elit hendrerit, efficitur imperdiet justo. Donec at purus nisl. Nunc finibus viverra luctus.
+        <h1><span class="badge bg-danger">Нормативные документы</span> </h1>
 
-        Quisque vitae orci ex. Vestibulum sed iaculis massa. Sed pellentesque quam in consequat blandit. Donec quis enim scelerisque, aliquet arcu nec, pellentesque libero. Maecenas cursus magna vel lacus porttitor, ut sollicitudin metus vulputate. Morbi sit amet facilisis erat, eget tincidunt leo. Nullam in ligula eget arcu bibendum pellentesque quis accumsan orci. Suspendisse id tempor augue.
 
-        Quisque tincidunt arcu in mollis volutpat. Curabitur condimentum nisi eget magna pharetra, cursus commodo sapien dapibus. Maecenas at nunc porta, auctor elit nec, dictum lorem. Sed ac libero nec mi feugiat dapibus ac at justo. Vestibulum dignissim nisi volutpat, laoreet leo eget, facilisis quam. Quisque convallis neque et hendrerit viverra. Donec at lacinia lacus, ac euismod neque. Proin pulvinar pretium diam, vitae venenatis purus accumsan in. Nam in lectus at enim ornare porttitor sit amet a odio. Nulla ante odio, dignissim et nibh tristique, eleifend pretium sapien. Quisque non pellentesque neque.
+        <a href="https://docs.google.com/document/d/1oCPBaxbFt-29gJd_oS8e5_tKGaX4dH3fTR3DQmbfKp4/edit" style = "color: black;"> <strong>Положение об олимпиаде</strong></a>
 
-        Aliquam efficitur neque eu sem mattis tempor. Aliquam ut rhoncus arcu. Sed laoreet bibendum purus id facilisis. Nulla in suscipit mauris. Donec dui est, finibus a efficitur vitae, fringilla et sem. Curabitur lacinia tellus sit amet diam ultricies porttitor. Aliquam sagittis nibh quis felis viverra feugiat. Aenean vestibulum, lorem a fringilla sodales, tortor urna rhoncus nisi, eget laoreet libero lectus ac erat. Phasellus tempus scelerisque scelerisque. Mauris eu ipsum sit amet nisl efficitur facilisis.
 
-        Praesent malesuada orci eget purus dignissim, ut placerat orci luctus. Nam congue, velit sit amet elementum ornare, nunc eros gravida tellus, quis luctus elit eros a nisi. Aliquam vel commodo lacus, et feugiat dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec egestas purus nisi. Nunc sed erat sed libero finibus semper. Nam a metus leo. Aenean pretium ante a laoreet hendrerit. Aenean tincidunt quis justo quis varius. Fusce condimentum velit ac porta fermentum. Sed in ultricies felis. Phasellus in urna eu tellus tempus tristique. Sed nec tellus id nisl euismod varius. Mauris luctus vulputate metus sit amet suscipit.
-
-        In eros ex, ultrices vitae enim vel, vehicula rhoncus libero. Nulla tincidunt pretium mi, ac ultricies odio dignissim in. Proin nec metus vel magna eleifend posuere. Curabitur posuere ipsum vitae bibendum sodales. Nulla nec luctus felis, vitae eleifend velit. Donec fermentum tellus eros, eget consectetur diam dignissim eu. In sit amet arcu massa.
+        <h1><span class="badge bg-danger">Организаторы</span> </h1>
 
         Vivamus eget pretium odio. Nunc eros felis, mollis sed risus sit amet, tristique lobortis massa. Nunc non leo iaculis, gravida ligula eget, ultricies libero. Ut eleifend sodales mi, vel finibus erat venenatis ut. Suspendisse justo est, fringilla sed tincidunt ullamcorper, viverra in leo. Praesent vehicula, mauris eu porta fermentum, ante lectus molestie ligula, fermentum ullamcorper nisl dolor non nunc. Proin pellentesque, arcu vel placerat gravida, arcu massa viverra diam, eget maximus nibh nulla sit amet elit. Mauris vehicula a orci eu volutpat.
 
@@ -47,44 +89,14 @@
 
         Etiam vestibulum fermentum orci in facilisis. Donec accumsan ornare vestibulum. Pellentesque ultricies turpis vel felis gravida luctus. Vestibulum commodo ante est, sit amet egestas erat luctus eget. Ut ut diam fermentum, lobortis ex at, hendrerit nunc. Nunc eu tortor ac lorem mattis dignissim rutrum sit amet felis. Nullam et aliquet ipsum. Etiam pulvinar, odio vulputate varius imperdiet, risus elit semper nisl, eu viverra mauris nisi id nisi. Ut non tempus eros, nec faucibus odio. Nam et neque turpis. Proin id nibh dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse odio nibh, lacinia ut mi sed, blandit tristique lectus. Nulla facilisi.
 
-        Nunc sit amet nulla in sapien molestie lacinia non eu orci. Vestibulum vitae finibus erat. Integer iaculis purus ut lorem maximus, non fermentum nulla consequat. Nullam mollis nisi justo, vitae gravida urna gravida sit amet. Aenean facilisis felis nec est finibus, non mattis est lobortis. Vestibulum lacinia dolor in leo imperdiet feugiat a a dui. Nullam non arcu elementum, sagittis mi eleifend, porttitor lectus. Etiam pharetra varius quam, quis iaculis neque dignissim vel. Aenean viverra nisl urna, nec dictum orci sodales vitae. Fusce efficitur fermentum cursus. Sed facilisis aliquam nulla quis placerat. Cras eget ex in velit pellentesque eleifend eget ac mi. Integer consectetur vel justo ac varius.
+        <h1><span class="badge bg-danger">Контактная информация организаторов</span> </h1>
+        <p style = "text-indent: 0%;"> <strong> <a href="ttps://gumrf.ru/sveden/struct/centr/dovuzobr">Центр Довузовского образования ГУМРФ им. адм. С.О. Макарова </a> — тел. +7 (812) 251-11-41 <br/>
+        Отдел приема абитуриентов и профориентации ВГУВТ — тел. +7 (831) 419-78-14 <br/>
+        Отдел взаимодействия с потребителями и профориентации СГУВТ — тел. +7 (383) 222-49-83 <br/>
+        Центр «Абитуриент МГУ им. адм. Г.И. Невельского» — тел. +7 (423) 230-12-50 </strong> </p>
 
-        Proin rutrum, justo nec fringilla porta, purus ante porta neque, ac volutpat nisi elit a ante. Mauris pulvinar eleifend orci, in imperdiet diam bibendum id. Curabitur feugiat metus a orci maximus, eu aliquet dolor suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas laoreet dui non porta interdum. Sed metus risus, viverra in accumsan sed, aliquam sed purus. Nulla tincidunt augue odio, sit amet blandit augue lacinia id. Ut sed sollicitudin diam.
-
-        Etiam eget tellus in augue facilisis rutrum at id magna. Cras pharetra mattis dui ac placerat. Fusce placerat ligula ipsum. Donec varius nunc id mollis porta. Aliquam quis dignissim dolor, eget luctus nisl. Aliquam est massa, efficitur non accumsan quis, semper nec felis. Ut vitae justo nisl. Etiam accumsan, nibh non convallis egestas, nisi velit egestas lorem, at facilisis nibh purus sed turpis. Sed blandit placerat sem ac porttitor. Fusce vitae dictum tortor. Etiam libero tortor, pharetra vitae tortor at, porttitor feugiat lacus. Curabitur blandit ullamcorper egestas. Suspendisse potenti. Aenean lobortis semper malesuada. Aenean fringilla pharetra nisi in placerat. Curabitur imperdiet lectus at pretium maximus.
-
-        Nulla congue laoreet posuere. Sed in diam non neque vestibulum tempus. Nullam eget lobortis magna, hendrerit fermentum purus. Praesent scelerisque mauris nisl, at viverra lectus dignissim sit amet. Sed suscipit semper mi, quis dignissim nulla porttitor ac. Maecenas ultrices eleifend efficitur. Suspendisse sodales volutpat convallis. Nunc mauris elit, aliquet nec bibendum vel, congue at metus. Donec dolor tellus, sodales rhoncus elementum id, aliquam ut mi. Etiam sit amet nibh dolor. Aliquam condimentum tortor vel odio porttitor, sed blandit dolor venenatis.
-
-        In ac nisi lorem. Nunc egestas urna quis gravida viverra. Nullam quis fermentum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras augue orci, tempus imperdiet tincidunt in, consectetur ac erat. Nunc vehicula luctus nisl sed varius. Fusce non lacus vitae enim pellentesque lacinia at fringilla lacus. Fusce ac nisl suscipit, iaculis magna a, bibendum erat. Sed tincidunt tortor lectus, in tempus magna cursus id. Vivamus et ipsum vel quam fermentum iaculis vel eget justo. Nullam id consequat metus. Ut quis tellus tellus. Suspendisse porttitor viverra feugiat. Donec fermentum fringilla nisi.
-
-        Ut eleifend tristique arcu, a varius nisi aliquam in. Mauris congue massa dui, nec ultricies quam vehicula ut. Mauris tincidunt ex dolor. Morbi pretium vehicula finibus. In tellus nulla, accumsan venenatis lorem et, tempor condimentum lectus. Proin tristique lacinia justo quis aliquet. Suspendisse blandit, turpis sit amet dapibus mollis, ipsum lorem dignissim dui, id varius tellus velit in magna. Nullam cursus gravida bibendum. Nulla ut quam id erat condimentum scelerisque a eu massa. Cras finibus, velit vel consectetur aliquet, odio velit blandit mauris, et egestas purus quam vel ante. Pellentesque at euismod mi. Vivamus hendrerit massa ligula, ornare vehicula turpis facilisis in. Aliquam lacinia hendrerit condimentum. In eu maximus massa.
-
-        Nam cursus at nibh pharetra interdum. Ut dui urna, lobortis eget tellus a, fermentum condimentum justo. Nulla gravida auctor libero eget placerat. Nulla quis luctus risus. Etiam congue fringilla volutpat. Donec in vulputate nibh, congue condimentum dui. Mauris efficitur ac sapien quis bibendum. Aliquam ultrices nec sapien interdum mattis.
-
-        Suspendisse ullamcorper ante felis, quis sagittis tortor vulputate id. In et ex suscipit, vestibulum mi at, commodo nibh. Nullam ut nunc mollis, iaculis elit eget, finibus elit. Sed sed mi at nibh fermentum gravida. Nullam aliquet lacinia massa vel suscipit. Aliquam sollicitudin quam nec nisi mollis, eget sollicitudin diam euismod. Donec malesuada magna sit amet tortor maximus ornare. Donec euismod, enim eget semper laoreet, ante leo tempus leo, sagittis consequat augue enim a metus. Maecenas at euismod erat.
-
-        Curabitur porttitor dapibus mauris lacinia eleifend. Vestibulum ornare elementum facilisis. Nam eget cursus odio, luctus vulputate massa. Integer at posuere velit, eget congue nulla. Aliquam ornare lectus nisi, vitae congue tortor dapibus nec. Integer varius massa non justo consectetur, sed egestas odio auctor. Duis a iaculis sem. Aliquam luctus feugiat aliquam. Fusce sed risus dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc in rhoncus ipsum, ac pulvinar felis. In eu lectus fermentum, vestibulum risus nec, pellentesque sem. Etiam nec convallis justo, eget auctor sem. Integer nec gravida ligula. Etiam sit amet augue lorem. 
+      
     </div>
-
-    <br/>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 50%; margin: auto;">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/static/images/News_ex_001.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <a href = "{{ url_for('path.news') }}" ><img src="/static/images/News_ex_002.png" class="d-block w-100" alt="..."> </a>  <!-- Если нажать на картинку -- перейдет по линке на страницу новости -->
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
+   
+<br/>
 {% endblock %}

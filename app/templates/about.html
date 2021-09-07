@@ -1,15 +1,33 @@
 {% extends 'base.html'%}
 
 {% block content %}
+    <img src="/static/images/Banner_003_large+morrechflot.png" class="img-fluid"  style = "width: 100; margin: 0;" alt="...">
+    
     <div class="container" style="text-align: justify;">
         <h1>Hello!</h1>
         it's really nice to see you :)
 
-        <p> <div class="d-inline-flex p-2 bd-highlight">Об олимпиаде</div> </p>
+        <br/>
+        <h1><span class="badge bg-danger" style="font-family: 'Press Start 2P', cursive;">Об олимпиаде</span> </h1>
+        <br/>
 
         orem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo bibendum felis id lobortis. Mauris eget pretium ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sit amet justo nec purus pharetra tempor dictum non mi. Vestibulum eget nunc sit amet enim bibendum tristique in et velit. Duis accumsan odio et urna sagittis, eget tincidunt dui tempus. Nam pretium, neque nec molestie lacinia, justo enim condimentum nibh, ut dapibus eros dolor ac lorem. Aenean pellentesque tristique enim at lacinia. Donec a elit lacus. Duis maximus bibendum tincidunt. Duis nec neque non nisl sodales iaculis non at elit. Fusce faucibus dolor vel sapien tincidunt, nec egestas libero tempor. Duis ullamcorper, ligula ut egestas cursus, est elit congue quam, in facilisis urna ex vitae augue. Quisque placerat id nisi eget tempor. Integer vulputate consequat tortor at sollicitudin.
 
         Fusce molestie, nisi id varius dapibus, neque ante imperdiet sem, non hendrerit ante elit et magna. Nulla cursus tincidunt ante. Aliquam sit amet nisi lorem. In hac habitasse platea dictumst. Aliquam viverra elit accumsan, laoreet risus varius, semper risus. Quisque fermentum vulputate odio sed laoreet. Fusce aliquet tincidunt mauris, pellentesque aliquam sem efficitur ac. Praesent sed tincidunt tortor, in scelerisque nunc. Nunc convallis ex non turpis tincidunt feugiat. Nullam luctus blandit dui vitae convallis. Phasellus a purus ex. Quisque fringilla erat eleifend libero placerat, in porttitor eros ullamcorper.
+        
+        <br/>
+        <span class="badge bg-danger">Новости</span>
+        <br/>
+
+
+        <div class="position-relative m-4" style="width: 75%; margin: auto;">
+            <div class="progress" style="height: 2px;">
+              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+            <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+            <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+          </div>
 
         Etiam quis egestas arcu. Nulla facilisi. Nunc accumsan felis ut lobortis porta. Integer congue pharetra scelerisque. Nunc convallis scelerisque nibh quis consectetur. Duis ullamcorper ut quam in euismod. Duis vitae ligula quis tortor rutrum pulvinar. Maecenas commodo lorem ac nulla aliquet, vel condimentum libero malesuada. Nullam orci velit, imperdiet sit amet elit hendrerit, efficitur imperdiet justo. Donec at purus nisl. Nunc finibus viverra luctus.
 
@@ -49,13 +67,13 @@
     </div>
 
     <br/>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 50%; margin: auto;">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/static/images/News_ex_001.png" class="d-block w-50" alt="...">
+            <img src="/static/images/News_ex_001.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <a href = "{{ url_for('path.news') }}" ><img src="/static/images/News_ex_002.png" class="d-block w-50" alt="..."> </a>  <!-- Если нажать на картинку -- перейдет по линке на страницу новости -->
+            <a href = "{{ url_for('path.news') }}" ><img src="/static/images/News_ex_002.png" class="d-block w-100" alt="..."> </a>  <!-- Если нажать на картинку -- перейдет по линке на страницу новости -->
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

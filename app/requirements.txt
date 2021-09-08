@@ -1,5 +1,4 @@
 beautifulsoup4==4.9.3
-Bootstrap-Flask==1.8.0
 click==8.0.1
 dominate==2.6.0
 Flask==2.0.1

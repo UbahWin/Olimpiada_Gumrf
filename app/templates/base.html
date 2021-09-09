@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <link href="https://allfont.ru/allfont.css?fonts=franklin-gothic-demi-cond" rel="stylesheet" type="text/css" />
+    <!-- <link href="https://allfont.ru/allfont.css?fonts=franklin-gothic-demi-cond" rel="stylesheet" type="text/css" /> -->
     <link href="https://allfont.ru/allfont.css?fonts=franklin-gothic-book" rel="stylesheet" type="text/css" />
 
     <title>Морская олимпиада</title>
@@ -13,11 +13,20 @@
   </head>
 
   <style type="text/css">
+    @font-face {
+      font-family: 'Franklin Gothic Demi Cond';
+      src: url('../static/fonts/franklin_gothic_demi_cond.eot'); /* IE 9 Compatibility Mode */
+      src: url('../static/fonts/franklin_gothic_demi_cond.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+        url('../static/fonts/franklin_gothic_demi_cond.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../static/fonts/franklin_gothic_demi_cond.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+        url('../static/fonts/franklin_gothic_demi_cond.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../static/fonts/franklin_gothic_demi_cond.svg#franklin_gothic_demi_cond') format('svg'); /* Chrome < 4, Legacy iOS */
+    }
     p{ 
       font-family: 'Franklin Gothic Book', arial;
       text-indent: 3%;
       color: #333366;
-      font-size: 150%;
+      /* font-size: 150%; */
       line-height: 1.15;
     }
     h1{

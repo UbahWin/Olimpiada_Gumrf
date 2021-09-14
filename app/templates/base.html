@@ -32,6 +32,7 @@
           url('../static/fonts/franklin_gothic_book.svg#franklin_gothic_book') format('svg'); /* Chrome < 4, Legacy iOS */
 
     }
+  
     p{ 
       font-family: 'Franklin Gothic Book', arial;
       text-indent: 3%;
@@ -62,21 +63,39 @@
       bottom: 0; 
       width: 100%;
     }
+    body, html {
+      height: 100%;
+    }
+
     .parallax {
   /* The image used */
-      background-image: url("/static/images/Banner_003_large+morrechflot.png");
+      background-image: url('/static/images/bg.png');
 
-      /* Set a specific height */
-      min-height: 500px;
+      height: 50%;
+   
 
-      position: relative;
+      /* Create the parallax scrolling effect */
       background-attachment: fixed;
-      /* background-position: center; */
+      background-position: center;
       background-repeat: no-repeat;
-      background-size:contain;
-      /* background-size: auto; */
-      /* background-size: cover; */
-}
+      background-size: cover;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+    @media only screen and (max-device-width: 1366px) {
+      .parallax {
+        background-attachment: scroll;
+        background-image: url(/static/images/Banner_003_large+morrechflot.png);
+        /* height: 30%; */
+      }
+      /* .parallax .img-fluid {
+        position: absolute; 
+        top: 30%; 
+        left: 50%;
+        transform: translate(-30%, -30%)
+
+      } */
+    }
   </style>
 
   <body >

@@ -80,21 +80,27 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .parallax .img-fluid {
+      position: absolute; 
+      top: 30%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      width: 45%;
+    }
 
     /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
     @media only screen and (max-device-width: 1366px) {
       .parallax {
-        background-attachment: scroll;
-        background-image: url(/static/images/Banner_003_large+morrechflot.png);
-        /* height: 30%; */
+        background-image: url('/static/images/bg.png');
+        height: 40%;
       }
-      /* .parallax .img-fluid {
-        position: absolute; 
-        top: 30%; 
-        left: 50%;
-        transform: translate(-30%, -30%)
-
-      } */
+      .parallax .img-fluid {
+        /* position: absolute;  */
+        top: 25%; 
+        left: 50%; 
+        /* transform: translate(-20%, -50%);  */
+        width: 70%;
+      }
     }
   </style>
 

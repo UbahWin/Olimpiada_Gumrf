@@ -10,9 +10,9 @@ path = Blueprint(
 def about():
     return render_template('about.html')
 
-# @path.route('/news', methods=['GET', 'POST'])
-# def news():
-#     return render_template('news.html')
+# @path.route('/manual', methods=['GET', 'POST'])
+# def manual():
+#     return render_template('manual.html')
 
 @path.app_errorhandler(404) # 'errorhandler' not working cause of blueprint usage, only 'app_errorhandler'
 def not_found_error(e):
